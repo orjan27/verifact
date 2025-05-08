@@ -20,6 +20,7 @@ public class GoogleSearchTool {
 
 	@Tool(description = "Search the web using Google Custom Search API")
     public String searchWeb(String query) {
+		System.out.println("Google Search query: " + query);
         final String url = UriComponentsBuilder.fromUriString("https://www.googleapis.com/customsearch/v1")
                 .queryParam("key", API_KEY)
                 .queryParam("cx", SEARCH_ENGINE_ID)
