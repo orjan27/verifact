@@ -11,10 +11,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Component
 public class GoogleSearchTool {
 
-	@Value("${google.api.key}")
+	@Value("${GOOGLE_API_KEY}")
     private String API_KEY;
 	
-	@Value("${google.search.engine.id}")
+	@Value("${GOOGLE_SEARCH_ENGINE}")
     private String SEARCH_ENGINE_ID;
 
 
